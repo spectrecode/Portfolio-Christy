@@ -466,10 +466,33 @@ hr{
 
 /* portafolio mobil*/
 
-.prueba{
-    background-image: url(../img/trabajo2.jpg);
+.proy-1, .proy-2, .proy-3{
     width: 100%;
     height: 100vh;
+    background-position: 50% 0px;
+}
+
+.proy-1{
+    background-image: url(../img/trabajo2.jpg);
+    background-position: initial;    
+}
+
+.proy-2{
+    background-image: url(../img/blog-mobile.png);
+}
+
+.proy-3{
+    background-image: url(../img/porta-mobile.png);
+}
+
+.carousel-caption p {
+    white-space: normal;
+    line-height: 1;
+}
+
+.carousel .descripcion{
+    background: rgba(0, 0, 0, 0.72);
+    text-shadow: 3px 1px 0px black;   
 }
 
 /*CONTACTO*/
