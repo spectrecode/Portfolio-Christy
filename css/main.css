@@ -199,6 +199,7 @@ div.sidebar {
 .titulo{
     top: 150px;
     position: relative;
+    text-shadow: 1px 1px 3px #06000a;
 }
 
 @media screen and (min-width: 0px) and (max-width: 1049px) {
@@ -512,4 +513,8 @@ hr{
     position: relative;
     top: 90px;
     font-size: 30px;
+}
+
+.contacto{
+    white-space: normal;
 }
