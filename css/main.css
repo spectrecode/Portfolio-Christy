@@ -8,6 +8,9 @@
 
 body{
 	white-space: nowrap;
+    color: #06000a;
+    font-family: 'Ubuntu', sans-serif;
+    background: #e6e6e8;
     /*overflow-y: hidden;*/
 }
 
@@ -27,22 +30,23 @@ section{
 
 .menuMobile {
     position: fixed;
-    background: rebeccapurple;
+    background: #06000a;
     height: 100vh;
-    z-index: 10;
+    z-index: 20;
     left: -257px;
     transition: left cubic-bezier(0.22, 0.01, 0, 0.97) 1.5s;
     box-shadow: 3px 0px 3px #57585d;
+    color: #c43235;
 }
 
 .burguer{
     height: 11%;
-    background: red;
+    background: #06000a;
     padding: 10px;
     position: absolute;
     right: -25.6%;
     border-radius: 0 5px 5px 0;
-    /* transition: color linear .4s; */
+    border: 1px solid #06000a;
     top: 0;
 }
 
@@ -52,9 +56,10 @@ section{
 }
 
 .menuMobile .row{
-    background: red;
+    background: #06000a;
+    /*color: #c43235;*/
     padding: 5px 38px;
-    border-bottom: 1px solid #333; 
+    border-bottom: 1px solid #c43235;
     /*transition: width ease-out .3s; */
 }
 
@@ -261,10 +266,6 @@ div.sidebar {
     .contacto .row .col-xs-12:last-child{
         text-align: right;
     }
-
-    .contacto :last-child{
-        top: -40px;
-    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
@@ -338,8 +339,7 @@ h2{
 /*habilidades mobile*/
 
 .skillbar {
-  font-family: 'Ubuntu', sans-serif;
-  width:500px;
+    width:500px;
     position:relative;
     display:block;
     margin-bottom:10px;

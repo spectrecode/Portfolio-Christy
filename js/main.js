@@ -101,11 +101,11 @@ var sideMenu = function(){
     $("#festejo").animate({
         left: '390px'
     },4000);
-    $("#principal").click(principal);    
-    $("#conoceme").click(conoceme);
-    $("#skills").click(power);
-    $("#port").click(portafolio);
-    $("#contact").click(contacto);
+    $("#principal, #in-mob").click(principal);    
+    $("#conoceme, #con-mob").click(conoceme);
+    $("#skills, #hab-mob").click(power);
+    $("#port, #port-mob").click(portafolio);
+    $("#contact, #contact-mob").click(contacto);
 
 }
 $(document).ready(sideMenu);
