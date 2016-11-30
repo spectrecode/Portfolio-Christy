@@ -101,7 +101,7 @@ div.sidebar {
 }
 
 .sidebar li.hover:not(:first-child){
-  color:#e6e6e8;
+  color:#c43235;
   text-shadow:0 0 4px rgba(0, 188, 153, .3);
   border-bottom:1px dotted #c43235;
 }
@@ -545,10 +545,6 @@ width:110px;
     color: #300032;
 }
 
-.icon {
-    box-shadow: 4px 4px 4px #c43235;
-
-}
 .contacto{
     white-space: normal;
 }
