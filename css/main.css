@@ -18,12 +18,8 @@ section{
     display: inline-block;
     width: 100vw;
     vertical-align: top;
-    overflow:hidden;
-    height: 650px;
-}
-
-.container{
-    max-width: 1050px;
+    /*overflow:hidden;*/
+    /*height: 650px;*/
 }
 
 /*menu mobile*/
@@ -228,11 +224,6 @@ div.sidebar {
     .container {
         max-width: 850px;
     }
-
-    .caja-img p{
-        line-height: normal;
-        font-size: 14px;
-    }
 }
 
 @media screen and (min-width: 321px) and (max-width: 544px) {
@@ -313,7 +304,7 @@ h1{
 
 h2{
     background: linear-gradient(120deg, #2f2e38, 64%,rgba(255, 255, 255, 0));
-    padding: 35px;
+    padding: 2%;
     color: white;
     letter-spacing: 7.3px;
     font-size: 40px;
@@ -415,99 +406,134 @@ width:110px;
 
 
 /*PORTAFOLIO*/
-hr{
-    width: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    border-width: 2px;
-}
 
-.caja-img{
-    /*margin: 10px;*/
-    /*float: left;*/
-    /* border: 10px solid #fff; */
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.caja-img:hover img{
-    transform: scale(1.2);
-}
-
-.portafolio img{
-    transition: ease-out .4s;
-    /* box-shadow: 1px 1px 2px #e6e6e6; */
-    /*transition: all 300ms ease-in;*/
+#portafolio .device button{
     display: block;
+    margin-left: auto;
+}
+
+#portafolio .bg-inverse{
+    width: 60%;
+    margin-left: auto;
+    height: 100%;
+}
+
+#portafolio .tablet .bg-inverse{
+    width: 80%;
+}
+
+#portafolio .phone .bg-inverse{
     width: 100%;
 }
 
-.portafolio li{
-    padding: 7px 0;
-}
-
-.caja-img:hover p{
-    transform: translateY(-98%) translateZ(-100px);
-    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
-    padding: 25px 20px;
-    margin: 0;
-}
-
-.caja-img p{
-    transform: translateY(0%) translateZ(-100px);
-    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
-    background: linear-gradient(rgba(0, 212, 135, 0.63), #3d5e6b);
-    position: absolute;
-    white-space: normal;
-    text-shadow: 2px 2px black;
-    color: white;
-}
-
-/* portafolio mobil*/
-
-.proy-1, .proy-2, .proy-3{
+#portafolio img{
     width: 100%;
-    height: 100vh;
-    background-position: 50% 0px;
+    border-radius: 3px;
 }
 
-.proy-1{
+.device {
+    position:relative;
+    background:#333;
+    border-radius:10px;
+    -webkit-transition:all .5s;
+    margin:auto;
+}
+
+.device:after {
+    -webkit-transition:all .4s;
+}
+
+.device .laptop{
     background-image: url(../img/trabajo2.jpg);
-    background-position: initial;    
 }
 
-.proy-2{
-    background-image: url(../img/blog-mobile.png);
-}
-
-.proy-3{
+.device .phone{
     background-image: url(../img/porta-mobile.png);
 }
 
-.carousel-caption p {
-    white-space: normal;
-    line-height: 1;
+.device .tablet{
+    background-image: url(../img/blog-mobile.png);
 }
 
-.carousel .descripcion{
-    background: rgba(0, 0, 0, 0.72);
-    text-shadow: 3px 1px 0px black;   
+.device .laptop, .phone, .tablet {
+    height:100%;
+    width:100%;
+    border-radius:5px;
+    -webkit-transition:all .5s;
+    background-size: cover;
+}
+
+#laptop:checked ~ .device .phone, #laptop:checked ~ .device .tablet  {
+    display:none;
+}
+#phone:checked ~ .device .laptop, #phone:checked ~ .device .tablet {
+    display:none;
+}
+
+#tablet:checked ~ .device .laptop, #tablet:checked ~ .device .phone {
+    display:none;
+}
+
+#laptop:checked ~ .device {
+    height: 450px;
+    width: 750px;
+    padding: 15px;
+}
+
+#laptop:checked ~ .device:after {
+    content:'\00A0';
+    position:absolute;
+    left:-5%;
+    bottom:-8%;
+    display:block;
+    width:110%;
+    height:9%;
+    background:#bdc3c7;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+#phone:checked ~ .device:after {
+    content:'\00A0';
+    position:absolute;
+    left:45%;
+    bottom:2%;
+    display:block;
+    width:25px;
+    height:25px;
+    background:#111;
+    border-radius:25px;
+}
+
+#phone:checked ~ .device {
+    height: 500px;
+    width: 300px;
+    padding:15px 15px 40px;
+}
+
+#tablet:checked ~ .device:after {
+    content:'\00A0';
+    position:absolute;
+    left:45%;
+    bottom:2%;
+    display:block;
+    width:25px;
+    height:25px;
+    background:#111;
+    border-radius:25px;
+}
+
+#tablet:checked ~ .device {
+    height: 550px;
+    width: 450px;
+    padding:15px 15px 40px;
+}
+
+#phone:checked ~ #rotate:checked ~ .device, #tablet:checked ~ #rotate:checked ~ .device {
+    -webkit-transform:rotate(90deg);
 }
 
 /*CONTACTO*/
-
-#contacto i{
-    transform: translateY(20%) translateZ(-100px);
-    transition:cubic-bezier(0, -0.3, 0, 2.44) 1s;
-    box-shadow: 4px 8px 7px 1px #57615b;
-}
-
-#contacto .row i:hover{
-    transform: translateY(-69%) translateZ(-100px);
-    transition-duration: 2s;
-}
 
 .contacto p{
     position: relative;

@@ -170,3 +170,16 @@ $(document).ready(function(){
         },6000);
     });
 });
+
+//  form
+
+// $(".boton-form").keyup(function(){
+//     var campoValido = $(".comentario-form").val();
+//     // var nulo = "",
+//     var maximo = campoValido.length;
+//     if (maximo > 0){
+//         $(".boton-form").disabled = true;
+//     }else if (maximo >= 1){
+//         $(".boton-form").disabled = false;
+//     }
+// });
