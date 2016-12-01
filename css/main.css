@@ -19,7 +19,7 @@ section{
     width: 100vw;
     vertical-align: top;
     /*overflow:hidden;*/
-    /*height: 650px;*/
+    height: 100%;
 }
 
 /*menu mobile*/
@@ -198,7 +198,14 @@ div.sidebar {
     text-shadow: 1px 1px 3px #06000a;
 }
 
-@media screen and (min-width: 0px) and (max-width: 1049px) {
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+    .container{
+        max-width: 1100px;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
     .titulo {
         top: 110px;
         max-width: 80%;
@@ -210,7 +217,7 @@ div.sidebar {
         font-size: 670%;
     }
     .container {
-        max-width: 985px;
+        max-width: 935px;
         margin-right: 30px;
         margin-left: 30px;
     }
@@ -218,13 +225,17 @@ div.sidebar {
     section{
         height: 580px;
     }
-}
 
-@media screen and (min-width: 545px) and (max-width: 991px) {
-    .container {
-        max-width: 850px;
+    #portafolio #laptop:checked ~ .device {
+        height: 100%; 
+        width: 65%;
+        display: block;
     }
-}
+
+    #festejo{
+        bottom: 30px;
+    }
+}  
 
 @media screen and (min-width: 321px) and (max-width: 544px) {
     .titulo h1 {
@@ -258,6 +269,11 @@ div.sidebar {
     .contacto .row .col-xs-12:last-child{
         text-align: right;
     }
+    #portafolio #laptop:checked ~ .device {
+        height: 25%;
+        width: 100%;
+        display: block;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
@@ -281,6 +297,11 @@ div.sidebar {
     .presentacion .ego img{
         width: 65%;
         margin-bottom: 10px;
+    }
+    #portafolio #laptop:checked ~ .device {
+        height: 100%;
+        width: 110%;
+        display: block;
     }
 }
 
@@ -508,7 +529,7 @@ width:110px;
 }
 
 .carousel .car-lap-trello,.car-lap-blog,.car-lap-port,.car-lap-user  {
-    height: 370px;
+    padding:7%;
     background-size: cover;
     border-radius: 5px;   
 }
@@ -553,15 +574,21 @@ width:110px;
 }
 .desc-trello-porta, .desc-blog-porta, .desc-port-porta, .desc-user-porta{
     opacity: 0;
-    position: absolute;
+    position: relative;
     background: red;
     white-space: normal;
-    padding: 15.7% 10%;
-    margin: 5%;
+    padding: 15% 5%;
+    transition: all .4s;
 }
 
 
 /*carousel tablet*/
+#carousel-tablet .car-lap-trello,
+#carousel-tablet .car-lap-port,
+#carousel-tablet .car-lap-blog,
+#carousel-tablet .car-lap-user{
+    height: 450px;
+}
 
 #carousel-tablet .car-lap-trello{
     background-image: url(../img/trabajo2.jpg);     
@@ -580,6 +607,13 @@ width:110px;
 }
 
 /*carousel cell*/
+
+#carousel-phone .car-lap-trello, 
+#carousel-phone .car-lap-port, 
+#carousel-phone .car-lap-blog, 
+#carousel-phone .car-lap-user{
+    height: 400px;
+}
 
 #carousel-phone .car-lap-trello{
     background-image: url(../img/trabajo2.jpg);     
@@ -612,7 +646,7 @@ width:110px;
 
 #laptop:checked ~ .device {
     height: 450px;
-    width: 750px;
+    width: 850px;
     padding: 15px;
 }
 
