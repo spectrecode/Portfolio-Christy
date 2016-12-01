@@ -19,7 +19,7 @@ section{
     width: 100vw;
     vertical-align: top;
     /*overflow:hidden;*/
-    /*height: 650px;*/
+    height: 100%;
 }
 
 /*menu mobile*/
@@ -198,6 +198,13 @@ div.sidebar {
     text-shadow: 1px 1px 3px #06000a;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+    .container{
+        max-width: 1100px;
+    }
+}
+
+
 @media screen and (min-width: 0px) and (max-width: 1024px) {
     .titulo {
         top: 110px;
@@ -210,7 +217,7 @@ div.sidebar {
         font-size: 670%;
     }
     .container {
-        max-width: 985px;
+        max-width: 935px;
         margin-right: 30px;
         margin-left: 30px;
     }
@@ -221,20 +228,14 @@ div.sidebar {
 
     #portafolio #laptop:checked ~ .device {
         height: 100%; 
-        width: 600px;
-        padding: 15px;
+        width: 65%;
+        display: block;
     }
 
     #festejo{
         bottom: 30px;
     }
-}
-
-@media screen and (min-width: 545px) and (max-width: 991px) {
-    .container {
-        max-width: 850px;
-    }
-}
+}  
 
 @media screen and (min-width: 321px) and (max-width: 544px) {
     .titulo h1 {
@@ -268,6 +269,11 @@ div.sidebar {
     .contacto .row .col-xs-12:last-child{
         text-align: right;
     }
+    #portafolio #laptop:checked ~ .device {
+        height: 25%;
+        width: 100%;
+        display: block;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
@@ -291,6 +297,11 @@ div.sidebar {
     .presentacion .ego img{
         width: 65%;
         margin-bottom: 10px;
+    }
+    #portafolio #laptop:checked ~ .device {
+        height: 100%;
+        width: 110%;
+        display: block;
     }
 }
 
@@ -635,7 +646,7 @@ width:110px;
 
 #laptop:checked ~ .device {
     height: 450px;
-    width: 750px;
+    width: 850px;
     padding: 15px;
 }
 
