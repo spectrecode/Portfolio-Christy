@@ -221,11 +221,14 @@ div.sidebar {
         margin-right: 30px;
         margin-left: 30px;
     }
-
-    section{
+    
+    .ch-grid .col-lg-4 {
+        height: 190px;
+    }
+    /*section{
         height: 580px;
     }
-
+*/
     #portafolio #laptop:checked ~ .device {
         height: 100%; 
         width: 65%;
@@ -323,12 +326,13 @@ h1{
 
 /*presentacion*/
 
-h2{
-    background: linear-gradient(120deg, #2f2e38, 64%,rgba(255, 255, 255, 0));
+h2 {
+    background: linear-gradient(153deg,#06000a 49%,#e6e6e8 0%, 275px,#300032 49%);
     padding: 2%;
-    color: white;
+    color: #c43235;
     letter-spacing: 7.3px;
     font-size: 40px;
+    text-shadow: -3px -1px 0px #e6e6e8;
 }
 
 .presentacion img{
@@ -378,7 +382,7 @@ h2{
     position:absolute;
     top:0;
     left:0;
-width:110px;
+    width:110px;
     font-weight:bold;
     font-size:13px;
     color:#ffffff;
@@ -577,7 +581,7 @@ width:110px;
     position: relative;
     background: red;
     white-space: normal;
-    padding: 15% 5%;
+    padding: 11.6% 5%;
     transition: all .4s;
 }
 
@@ -645,7 +649,7 @@ width:110px;
 }
 
 #laptop:checked ~ .device {
-    height: 450px;
+    height: 445px;
     width: 850px;
     padding: 15px;
 }
