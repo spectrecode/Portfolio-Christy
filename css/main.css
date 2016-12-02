@@ -325,14 +325,76 @@ h1{
 }
 
 /*presentacion*/
+.caja-titulo{
+    background: linear-gradient(153deg,#06000a 49%,#e6e6e8 0%, 337px,#300032 49%);
+    padding: 2%;    
+}
+.title{ 
+  color:white;  
+  font-family:Tahoma;
+  float:left;
+  font-size:30px;
+  padding:0 10px;
+  text-shadow:none;
+  font-weight:100;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased
+}
+
+.rotate {
+  -webkit-transition:all 0.9s;
+  -moz-transition:all 0.9s;
+  -ms-transition:all 0.9s;
+  -o-transition:all 0.9s;
+  transition:all 0.9s;
+  -webkit-transition-timing-function:ease-out;
+  -moz-transition-timing-function:ease-out;
+  -ms-transition-timing-function:ease-out;
+  -o-transition-timing-function:ease-out;
+  transition-timing-function:ease-out;
+  -webkit-transform:rotate(-360deg);
+  -moz-transform:rotate(-360deg);
+  -ms-transform:rotate(-360deg);
+  -o-transform:rotate(-360deg);
+  transform:rotate(-360deg);
+}
 
 h2 {
-    background: linear-gradient(153deg,#06000a 49%,#e6e6e8 0%, 275px,#300032 49%);
-    padding: 2%;
     color: #c43235;
     letter-spacing: 7.3px;
-    font-size: 40px;
+    font-size: 43px;
     text-shadow: -3px -1px 0px #e6e6e8;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% {   color: #e6e6e8;
+            text-shadow: -3px -1px 0px #c43235;}
+    100% { opacity: 1.0; }
 }
 
 .presentacion img{
