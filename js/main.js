@@ -125,10 +125,9 @@ var conoceme = function(){
     $("html, body").animate({
         scrollLeft: $(".presentacion").offset().left
     }, 1200);
-    $("#festejo").on("")
     $("#festejo").animate({
         left: $(".presentacion").offset().left
-    },1000);
+    },1000).removeClass("voltearGato");
     correFestejo();
 }
 
@@ -138,7 +137,7 @@ var power = function(){
     }, 1200);  
     $("#festejo").animate({
         left: $("#power").offset().left
-    },1000);
+    },1000).removeClass("voltearGato");
     correFestejo();
 }
 
@@ -148,17 +147,17 @@ var portafolio = function(){
     }, 1200);
     $("#festejo").animate({
         left: $("#portafolio").offset().left
-    },1000);
+    },1000).removeClass("voltearGato");
     correFestejo();
 }
 
 var contacto = function(){
     $("html, body").animate({
         scrollLeft: $("#contacto").offset().left
-    }, 1200);
+    }, 1200).removeClass("voltearGato");
     $("#festejo").animate({
         left: $("#contacto").offset().left
-    },1000);
+    },1000).removeClass("voltearGato");
     correFestejo();
 }
 
