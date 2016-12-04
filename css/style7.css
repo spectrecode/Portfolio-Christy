@@ -3,7 +3,7 @@
 }
 
 .ch-item {
-	perspective: 900px;
+	perspective: 1400px;
 }
 .ch-info{
 	/*width: 100%;*/
@@ -44,10 +44,18 @@
 
 .ch-img-1{ 
 	background-image: url(../img/morado.gif);
+	z-index: -1;
 }
 
-.ch-img-1:before{
-    
+.ch-img-1:before {
+    content: "";
+    background: rgba(29, 26, 28, 0.56);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .ch-info h3 {
@@ -80,7 +88,6 @@
 	color: rgba(255,255,255,0.7);
 	font-style: normal;
 	font-weight: 700;
-	text-transform: uppercase;
 	font-size: 9px;
 	letter-spacing: 1px;
 	padding-top: 4px;

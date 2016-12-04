@@ -1,3 +1,14 @@
+// reverse scroll
+
+$(function(){
+    $("#page-wrap").wrapInner("<table cellspacing='0'><tr>");
+    $(".post").wrap("<td></td>");
+    $("body").mousewheel(function(event, delta) {
+        this.scrollLeft -= (delta * 30);
+        event.preventDefault();
+    });   
+});
+
 // sidemenu
 
 $(".small").click(function(){
@@ -99,7 +110,7 @@ $(window).scroll(function() {
 
 var sideMenu = function(){
     $("#festejo").animate({
-        left: '390px'
+        left: '30%'
     },4000);
     $("#principal, #in-mob").click(principal);    
     $("#conoceme, #con-mob").click(conoceme);
@@ -116,7 +127,7 @@ var principal = function(){
         scrollLeft: 0
     }, 2000);
     $("#festejo").animate({
-        left: "390px"
+        left: "38%"
     },2000).addClass("voltearGato");
     correFestejo();
 }
@@ -126,7 +137,7 @@ var conoceme = function(){
         scrollLeft: $(".presentacion").offset().left
     }, 1200);
     $("#festejo").animate({
-        left: $(".presentacion").offset().left
+        left: $(".perfil").offset().left
     },1000).removeClass("voltearGato");
     correFestejo();
 }
@@ -135,10 +146,6 @@ var power = function(){
     $("html, body").animate({
         scrollLeft: $("#power").offset().left
     }, 1200);  
-    $("#festejo").animate({
-        left: $("#power").offset().left
-    },1000).removeClass("voltearGato");
-    correFestejo();
 }
 
 var portafolio = function(){
@@ -154,7 +161,7 @@ var portafolio = function(){
 var contacto = function(){
     $("html, body").animate({
         scrollLeft: $("#contacto").offset().left
-    }, 1200).removeClass("voltearGato");
+    }, 1200);
     $("#festejo").animate({
         left: $("#contacto").offset().left
     },1000).removeClass("voltearGato");
