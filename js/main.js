@@ -118,6 +118,8 @@ var sideMenu = function(){
     $("#port, #port-mob").click(portafolio);
     $("#contact, #contact-mob").click(contacto);
 
+    $(".envio-coment").click(comentario);
+
 }
 
 $(document).ready(sideMenu);
@@ -168,6 +170,11 @@ var contacto = function(){
     correFestejo();
 }
 
+var comentario = function(){
+    $("textarea").val("");
+    $(".nombre-coment").val("");
+}
+         
 // habilidades mobile
 
 $(document).ready(function(){
@@ -177,4 +184,12 @@ $(document).ready(function(){
         },6000);
     });
 });
+$(document).ready(function () {
+  
+});
+// envio correo
 
+// $('.modal').ready(function() {
+//     var campo-comentario = campo.val();
+//     window.location.href = mailto;
+// });
