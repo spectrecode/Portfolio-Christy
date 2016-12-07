@@ -701,7 +701,7 @@ h2 {
 #carousel-tablet .car-lap-eco,
 #carousel-tablet .car-lap-blog,
 #carousel-tablet .car-lap-user{
-    height: 450px;
+    padding: 55% 0;
 }
 
 #carousel-tablet .car-lap-trello{
@@ -726,7 +726,7 @@ h2 {
 #carousel-phone .car-lap-eco, 
 #carousel-phone .car-lap-blog, 
 #carousel-phone .car-lap-user{
-    height: 400px;
+    padding: 80% 0;
 }
 
 #carousel-phone .car-lap-trello{
@@ -790,8 +790,7 @@ h2 {
 }
 
 #phone:checked ~ .device {
-    height: 500px;
-    width: 300px;
+    width: 30%;
     padding:15px 15px 40px;
 }
 
@@ -808,8 +807,7 @@ h2 {
 }
 
 #tablet:checked ~ .device {
-    height: 550px;
-    width: 450px;
+    width: 40%;
     padding:15px 15px 40px;
 }
 
