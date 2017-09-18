@@ -638,15 +638,15 @@ h2 {
 
 /*carousel laptop*/
 .carousel .car-lap-trello{
-    background-image: url(../img/trello.jpg);     
+    background-image: url(../img/walon.png);     
 }
 
 .carousel .car-lap-eco{
-    background-image: url(../img/eco-lap.jpg);     
+    background-image: url(../img/potash.png);     
 }
 
 .carousel .car-lap-blog{
-    background-image: url(../img/blog.jpg);     
+    background-image: url(../img/antonia.png);     
 }
 
 .carousel .car-lap-user{
@@ -705,15 +705,15 @@ h2 {
 }
 
 #carousel-tablet .car-lap-trello{
-    background-image: url(../img/trello.jpg);     
+    background-image: url(../img/walon-tablet.png);     
 }
 
 #carousel-tablet .car-lap-eco{
-    background-image: url(../img/eco-tablet.jpg);     
+    background-image: url(../img/potash-tablet.png);     
 }
 
 #carousel-tablet .car-lap-blog{
-    background-image: url(../img/blog-mobile.png);     
+    background-image: url(../img/antonia-tablet.png);     
 }
 
 #carousel-tablet .car-lap-user{
@@ -730,15 +730,15 @@ h2 {
 }
 
 #carousel-phone .car-lap-trello{
-    background-image: url(../img/trello.jpg);     
+    background-image: url(../img/walon-mobile.png);     
 }
 
 #carousel-phone .car-lap-eco{
-    background-image: url(../img/eco-cell.jpg);     
+    background-image: url(../img/potash-mobile.png);     
 }
 
 #carousel-phone .car-lap-blog{
-    background-image: url(../img/blog-cell.png);     
+    background-image: url(../img/antonia-mobile.png);     
 }
 
 #carousel-phone .car-lap-user{
